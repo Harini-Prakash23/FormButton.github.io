@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="formStyle.css">
+    <title>FormWithStyle</title>
+    
+</head>
+<body>
+    <h1>FORM</h1>
+    <form action="Message.html">
+      <center>  <fieldset>
+            <legend><h3>Personal Details :</h3></legend>
+       
+
+            <label for="first name">First Name:</label><br>
+            <input type="text" id="first name" name="first name" placeholder="First Name" required pattern="[A-Z a-z]*"><br><br>
+
+            <label for="middle name">Middle Name:</label><br>
+            <input type="text" id="middle name" name="middle name" placeholder="Middle Name" required pattern="[A-Z a-z]*"><br><br>
+
+            <label for="last name">Last Name:</label><br>
+            <input type="text" id="last name" name="last name" placeholder="Last Name" required pattern="[A-Z a-z]*"><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" placeholder="DOB" required ><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+        </fieldset><br>
+        <fieldset>
+
+
+            <legend><h3>Educational Details :</h3></legend>
+
+            <label for="">Department:</label><br>
+            <input type="radio" name="dept1" id="cse">
+
+            <label for="cse">CSE</label>
+            <input type="radio" name="dept1" id="ece">
+
+            <label for="ece">ECE</label>
+            <input type="radio" name="dept1" id="eee">
+            <label for="eee">EEE</label>
+
+            <input type="radio" name="dept1" id="civil">
+            <label for="civil">CIVIL</label>
+
+            <input type="radio" name="dept1" id="mech" required>
+            <label for="mech">MECH</label><br><br>
+
+            <label for="yop">Year of Passing:</label><br>
+            <input list="yog" id="yop" name="yop" required>
+            <datalist id="yog">
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+            </datalist>
+
+            <br><br>
+            <label for="">Skills:</label><br>
+
+            <input type="checkbox" id="html" name="html">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="CSS" name="css">
+            <label for="CSS">CSS</label>
+
+            <input type="checkbox" id="SQL" name="sql">
+            <label for="SQL">SQL</label>
+
+            <input type="checkbox" name="java" id="java">
+            <label for="java">JAVA</label>
+            <br><br>
+            <label for="resume">Upload Resume</label><br>
+            <input type="file" id="resume" name="resume" required placeholder="Upload resume">
+        
+        </fieldset>
+        </center>
+        <br><br>
+        <center>
+            <button>Submit</button>
+        </center>
+       
+    </form>
+</body>
+</html>
